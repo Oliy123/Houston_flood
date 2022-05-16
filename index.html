@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Social Equity in Seattle</title>
+		<!-- insert Mapbox GL library links here -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet'/>
+		<link rel='stylesheet' href='styles.css'/>
+		<link rel='preconnect' href='https://fonts.gstatic.com'>
+		<link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap' rel='stylesheet'>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+  </head>
+
+	<body>
+		<div class='container'>
+		<div class="main">
+			<h1 class='heading'>At Flood-Risk Population in Houston </h1>
+			<h2 id='rseci'><a href="https://uwt-gis-geotech.maps.arcgis.com/home/item.html?id=69016c145246426bb13cd90c92b3118d">Census tracts that may be vulnerable during a flood</a> </h2>
+					<div id='rsecimap'><div class='map-overlay' id='rsecifeatures'>
+
+
+						<div id='getrseci'><br><br><h5>Hover over a map for more info</h5></div></div>
+						<div class='map-overlay' id='rsecilegend'></div>
+					</div>
+					<div class="desc">
+					<p>This web map shows flood susceptibility area and demographic data by census tract for Houston, Texas. The darker yellow has a higher rate of the area flood rescue. And also, by hovering over the map, we can get the percentage of households without a vehicle. This app helps answer the question: Where should we provide evacuation assistance during a flood rescue in Houston?
+					Use the Legend tools to learn more about the data shown on the map. Hover over census tracts to see pop-up information, including the percentage of households without a vehicle. </p>
+				</div>
+
+
+				</div>
+			</div>
+		</div>
+			<script src="javascript.js"></script>
+	</body>
+</html>
